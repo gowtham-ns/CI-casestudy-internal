@@ -16,7 +16,7 @@ pipeline {
         stage('Stage 1') {
             steps {
                 echo 'Retrieving source from github' 
-                git branch: 'master',
+                git branch: 'main',
                     url: 'https://github.com/gowtham-ns/CI-casestudy-internal.git'
                 echo 'Did we get the source?' 
                 sh 'ls -a'
